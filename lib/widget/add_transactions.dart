@@ -64,7 +64,7 @@ class _AddTransactionState extends State<AddTransaction> {
               onPressed: () {
 
                 widget.addTx(
-                    titleController.text, double.parse(amountController.text),  _presentDatePicker);
+                    titleController.text, double.parse(amountController.text));
                 Navigator.of(context).pop();
               },
                style: ElevatedButton.styleFrom(

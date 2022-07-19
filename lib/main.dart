@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       );
     }).toList();
   }
-  void _addNewTransaction(String title, double amount, DateTime date)  { 
+  void _addNewTransaction(String title, double amount)  { 
     final addNew = Transaction(
       title: title,
       amount: amount,
@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget build(BuildContext context) {
       return Scaffold(
           appBar: AppBar(
-            title: const Text('Flutter Demo Home Page'),
+            title: const Text('Expense Tracker'),
             actions: [
               IconButton(
                 icon: Icon(Icons.add),
